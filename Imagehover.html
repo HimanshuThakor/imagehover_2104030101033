@@ -1,0 +1,79 @@
+<html>
+<head>
+		<style type="text/css">
+			.container-img {
+			  position:relative;
+			  width: 300px;
+			}
+
+			.image {
+			  display: block;
+			  width: 300px;
+			  height: 400px;
+			  transition:1s;
+			}
+
+			.overlay {
+			  position:absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  height: 100%;
+			  opacity:0;
+			  transition: 1s;
+			  background-color:rgba(235, 152, 0, 0.7);
+			}
+
+			.container-img:hover .overlay {
+			  opacity:1;
+			}
+			.container-img:hover .image {
+			  
+			  transform:rotate(360deg);
+
+			  /*
+				transform:scale(0.5);
+				transform:scale(1.5);
+				
+
+				transform:skew(90deg);
+				
+				transform:translate(300px,0px);
+				transform:translate(0px,400px);
+				transform:translate(300px,400px); 
+			  */
+			}
+			.text {
+			  color: rgb(255, 0, 0);
+			  font-size: 20px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  -o-transform: translate(-50%, -50%);
+			  -moz-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align:center;
+			  
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Image hover </h2>
+		<div class="container-img">
+			<img src="Tomato-HD.jpg" alt="Click Here" class="image">
+			<div class="overlay">
+				<div class="text"><a href="https://www.google.com/">Google</a><br>
+                    <a href="https://www.youtube.com/">YouTube</a><br>
+                    <a href="https://www.google.com/maps">Google Map</a><br>
+                    <a href="https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700065205026376_creativeid_535350509651_device_c&gclid=EAIaIQobChMIoayTwYze9wIVN51LBR1BcQf1EAAYASAAEgKoiPD_BwE&gclsrc=aw.ds">Play Store</a>
+                    <a href="https://accounts.google.com/signin/v2/identifier?service=writely&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Google Drive</a>
+                </div>
+		    </div>
+		</div>
+	
+
+</body>
+</html>
